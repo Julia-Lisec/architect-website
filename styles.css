@@ -125,8 +125,13 @@ html {
   height: 100vh;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -40rem;
   background-color: #fff;
+  transition: right 0.5s;
+}
+
+.change .sidebar {
+  right: 0;
 }
 
 .menu {
