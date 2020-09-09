@@ -37,6 +37,8 @@ html {
   width: 100%;
   height: 100vh;
   position: relative;
+  perspective: 100rem;
+  overflow: hidden;
 }
 
 .img-wrapper {
@@ -78,6 +80,7 @@ html {
   line-height: 9rem;
   letter-spacing: 0.2rem;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+  animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p {
@@ -88,6 +91,7 @@ html {
   letter-spacing: 0.1rem;
   margin-bottom: 3rem;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner button {
@@ -102,5 +106,16 @@ html {
   text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
+  animation: moveBanner 1s 0.9s forwards;
 
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateY(40rem) rotateY(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
 }
