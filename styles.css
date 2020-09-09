@@ -24,6 +24,11 @@ html {
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
+  transition: right 0.7s;
+}
+
+.change .hamburger-menu {
+  right: 33rem;
 }
 
 .line {
@@ -31,6 +36,23 @@ html {
   height:0.2rem;
   background-color: #fff;
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.change .line {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.change .line-1 {
+  transform: rotate(45deg) translate(0.3rem, 0.8rem);
+}
+
+.change .line-2 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .line-3 {
+  transform: rotate(-45deg) translate(0.3rem, -0.8rem);
 }
 
 .header {
