@@ -608,6 +608,7 @@ html {
   margin: 0 2rem;
 }
 
+/* scroll button */
 .scroll-btn {
   position: fixed;
   right: 5rem;
@@ -622,4 +623,24 @@ html {
   color: #fff;
   box-shadow: 0 0.1rem 0.6rem rgba(0,0,0,0.2);
   border-radius: 0.3rem;
+}
+
+/* Media queries */
+@media(max-width: 1500px) {
+  .about-us-img-wrapper {
+    grid-row: 3 / -1;
+  }
+
+  .card {
+    width: 34rem;
+  }
+
+  .contact-wrapper {
+    width: 80%;
+    height: 65rem;
+  }
+
+  .footer-content {
+    width: 80%;
+  }
 }
