@@ -775,4 +775,15 @@ html {
     width: 55rem;
   }
 
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+  }
+
+  .copyright {
+    order: 1;
+    margin-top:3rem;
+  }
 }
