@@ -13,6 +13,7 @@ html {
   font-size: 62.5%    /* sets font-size to 10px for easier rem usage */
 }
 
+/* loading spinner */
 .spinner-container {
   position: absolute;
   top: 0;
@@ -31,6 +32,11 @@ html {
   position: relative;
 }
 
+.circles div {
+  animation: circles 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 4rem 4rem;
+}
+
 .circles div::after {
   content:"";
   position: absolute;
@@ -38,6 +44,11 @@ html {
   height: 0.7rem;
   border-radius: 50%;
   background-color: #c29525;
+  margin: -0.4rem 0 0 -0.4rem;
+}
+
+.circles div:nth-child(1) {
+  animation-delay: -0.036s;
 }
 
 .circles div:nth-child(1)::after {
@@ -45,9 +56,17 @@ html {
   left: 6.3rem;
 }
 
+.circles div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
 .circles div:nth-child(2)::after {
   top: 6.8rem;
   left: 5.6rem;
+}
+
+.circles div:nth-child(3) {
+  animation-delay: -0.108s;
 }
 
 .circles div:nth-child(3)::after {
@@ -55,9 +74,17 @@ html {
   left: 4.8rem;
 }
 
+.circles div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
 .circles div:nth-child(4)::after {
   top: 7.2rem;
   left: 4rem;
+}
+
+.circles div:nth-child(5) {
+  animation-delay: -0.18s;
 }
 
 .circles div:nth-child(5)::after {
@@ -65,9 +92,17 @@ html {
   left: 3.2rem;
 }
 
+.circles div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
 .circles div:nth-child(6)::after {
   top: 6.8rem;
   left: 2.4rem;
+}
+
+.circles div:nth-child(7) {
+  animation-delay: -0.252s;
 }
 
 .circles div:nth-child(7)::after {
@@ -75,9 +110,23 @@ html {
   left: 1.7rem;
 }
 
+.circles div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
 .circles div:nth-child(8)::after {
   top: 5.6rem;
   left: 1.2rem;
+}
+
+@keyframes circles {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .container {
