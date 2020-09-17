@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 62.5%    /* sets font-size to 10px for easier rem usage */
+  font-size: 62.5%  /* sets font-size to 10px for easier rem usage */
 }
 
 /* loading spinner */
@@ -24,6 +24,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  z-index: 300;
+}
+
+.display .spinner-container {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .circles {
@@ -131,6 +138,10 @@ html {
 
 .container {
   display: none;
+}
+
+.display .container {
+  display: block;
 }
 
 .hamburger-menu {
