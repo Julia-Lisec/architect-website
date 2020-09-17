@@ -185,6 +185,7 @@ html {
 
 .hamburger-menu:hover .line {
   box-shadow: 0 0.1rem 0.2rem rgba(220,220,220,0.3);
+  transition: all 0.3s;
 }
 
 .change .hamburger-menu {
@@ -508,6 +509,12 @@ html {
   line-height: 2.6rem;
   font-weight: 400;
   margin-bottom: 2rem;
+}
+
+.service-header h3:hover {
+  font-size: 2.8rem;
+  color: #6c4e02;
+  transition: all 0.5s;
 }
 
 .sercive-text {
