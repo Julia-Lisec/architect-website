@@ -634,6 +634,12 @@ html {
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
+.card-info button:hover {
+  background-color: transparent;
+  border: 2px solid #c29525;
+  transition: all 0.2s;
+}
+
 /* Contact section */
 .contact {
   width: 100%;
