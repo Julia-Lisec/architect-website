@@ -326,6 +326,12 @@ html {
   animation: moveBanner 1s 0.9s forwards;
 }
 
+.banner button:hover {
+  background-color: transparent;
+  border: 2px solid #c29525;
+  transition: all 0.2s;
+}
+
 @keyframes moveBanner {
   0% {
     transform: translateY(40rem) rotateY(-20deg);
