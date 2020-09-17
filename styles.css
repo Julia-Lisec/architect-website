@@ -331,6 +331,7 @@ html {
   background-color: transparent;
   border: 2px solid #c29525;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 @keyframes moveBanner {
@@ -515,6 +516,7 @@ html {
   font-size: 2.8rem;
   color: #6c4e02;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .sercive-text {
@@ -638,6 +640,7 @@ html {
   background-color: transparent;
   border: 2px solid #c29525;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 /* Contact section */
@@ -755,6 +758,14 @@ html {
   box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.3);
 }
 
+.submit-btn:hover {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #c29525;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
 /* Footer section */
 .footer {
   width: 100%;
@@ -777,6 +788,11 @@ html {
   color: #a7a7a7;
 }
 
+.copyright span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .social-list {
   margin: 0 2rem;
 }
@@ -785,6 +801,11 @@ html {
   font-size: 2rem;
   color: #a7a7a7;
   margin: 0 2rem;
+}
+
+.social-list i:hover {
+  color: #c29525;
+  transition: all 0.2s;
 }
 
 /* scroll button */
@@ -802,6 +823,12 @@ html {
   color: #fff;
   box-shadow: 0 0.1rem 0.6rem rgba(0,0,0,0.2);
   border-radius: 0.3rem;
+}
+
+.scroll-btn:hover {
+  height: 4.7rem;
+  width: 4.7rem;
+  transition: all 0.3s;
 }
 
 /* Media queries */
