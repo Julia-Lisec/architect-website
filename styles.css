@@ -183,6 +183,10 @@ html {
   transition: right 0.7s;
 }
 
+.hamburger-menu:hover .line {
+  box-shadow: 0 0.1rem 0.2rem rgba(220,220,220,0.3);
+}
+
 .change .hamburger-menu {
   right: 33rem;
 }
